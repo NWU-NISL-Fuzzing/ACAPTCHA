@@ -7,7 +7,7 @@ ACHAPTCHA is composed of two components: (1) an adversarial text captcha generat
 ### Prerequisites
 
 * Install necessary packages from requirements.txt
-* Download crnn.rar from [here](https://drive.google.com/file/d/1NFYGkOPUycYjqvOBRrwsQArRWCBSI0DK/view?usp=sharing) and unzip them into `generation/crnn`
+* Download crnn.rar from [here](https://drive.google.com/file/d/1NFYGkOPUycYjqvOBRrwsQArRWCBSI0DK/view?usp=sharing) and unzip them into `crnn`
 
 
 
