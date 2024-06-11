@@ -4,9 +4,9 @@ ACHAPTCHA is composed of two components: (1) an adversarial text captcha generat
 
 
 
-### Prerequists
+### Prerequisites
 
-* Intall necessary packages from requirements.txt
+* Install necessary packages from requirements.txt
 * Download crnn.rar from [here](https://drive.google.com/file/d/1NFYGkOPUycYjqvOBRrwsQArRWCBSI0DK/view?usp=sharing) and unzip them into `generation/crnn`
 
 
@@ -35,7 +35,7 @@ python tool/create_dataset.py --out lmdb/version/v1_1/val --folder ../datasets/v
 python train.py --trainroot lmdb/version/v1_1/train --valroot lmdb/version/v1_1/val
 ```
 
-Then, you can generate adversarial example using different adversarial example algorithms (`fgsm.py`, `i-fgsm.py` or `deepfool.py`).
+Then, you can generate adversarial examples using different adversarial example algorithms (`fgsm.py`, `i-fgsm.py`, or `deepfool.py`).
 
 ```
 python fgsm.py
@@ -45,7 +45,7 @@ python fgsm.py
 
 **3.  Eliminate perturbation of ACAPTCHA through image processing techniques**
 
-We integrates 9 image processing techniques (Pix2Pix, total variation loss, three data compression algorithms,and four imagefilters) to remove adversarial perturbation in ACAPTCHAs.
+We integrate 9 image processing techniques (Pix2Pix, total variation loss, three data compression algorithms, and four image filters) to remove adversarial perturbation in ACAPTCHAs.
 
 ```
 python filter.py
@@ -58,6 +58,4 @@ python filter.py
 ```
 python test.py
 ```
-
-
 
